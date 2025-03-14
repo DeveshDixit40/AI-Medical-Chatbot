@@ -1,57 +1,50 @@
-<p><h3 align="center"><img src="https://img.shields.io/badge/Mental-Health-blue" alt="shields"><img src="https://img.shields.io/github/stars/Rogendo/Mental-health-Chatbot%20" alt="shields"><img src="https://img.shields.io/github/forks/Rogendo/Mental-health-Chatbot" alt="shields"><img src="https://img.shields.io/github/contributors/Rogendo/Mental-health-Chatbot" alt="shields"></h3></p>
+# Mental Health Chatbot
 
+## Project Overview
+The **Mental Health Chatbot** is an AI-driven conversational assistant designed to provide mental health support. It engages users in meaningful conversations, offering guidance and resources based on predefined intents.
 
-<p align="center"><img src="https://socialify.git.ci/Rogendo/Mental-health-Chatbot/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+## Features
+- Provides empathetic responses to mental health-related queries.
+- Uses NLP techniques to understand and process user inputs.
+- Trained on a dataset of mental health-related conversations.
+- Built using **Python, TensorFlow/Keras, Flask, and NLP libraries**.
 
-<p id="description">This is an AI-powered bot designed to provide emotional support and assistance to individuals struggling with mental health issues. It can help individuals access mental health resources offer guidance and support. With the integration of Language translation this chatbot will be very efficient as it will be able to break the language barriers. The creation of a chatbot capable of language translation holds transformative potential acting as a catalyst in overcoming language barriers for effective communication and information exchange. Its impact spans diverse sectors including: healthcare commerce and governance etc. offering a versatile solution to bridge linguistic gaps.</p>
+## Installation and Setup
 
+### Prerequisites
+Ensure you have **Python 3.7+** installed on your system.
 
-<h2>🧐 Features</h2>
+### Steps to Run the Project
+1. **Clone or Extract the Project**
+   ```bash
+   git clone <repository_url>
+   cd Mental-health-Chatbot
+   ```
+   If using the provided ZIP file, extract it and navigate into the project folder.
 
-Here're some of the project's best features:
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-*   Conversational
-*   Multilingual
-*   Mental Health support
-   
-![Screenshot from 2025-01-21 15-06-06](https://github.com/user-attachments/assets/9a5852e9-96ba-4c42-bf4a-bd50622c417c)
+3. **Run the Chatbot Application**
+   ```bash
+   python app.py
+   ```
+   This will start a Flask server, and you can interact with the chatbot via the provided endpoint.
 
-# How to Set Up it?
+4. **Interacting with the Chatbot**
+   Open your browser and navigate to `http://127.0.0.1:5000/` (or any specified port) to begin using the chatbot.
 
-The following instructions were tested on the Windows and Linux with Python 3.8.
+## File Structure
+- `app.py` - Main application script for running the chatbot server.
+- `intents.json` - Contains chatbot responses and intent categorization.
+- `model.h5` - Pre-trained deep learning model for intent classification.
+- `training.py` - Script used to train the chatbot model.
+- `requirements.txt` - List of dependencies required for running the chatbot.
+- `texts.pkl` and `labels.pkl` - Serialized tokenizer and label encoder for text processing.
 
-1. Clone this repository
-
-```
-git clone https://github.com/Rogendo/Mental-health-Chatbot.git
-```
-```
-cd Mental-health-Chatbot/
-```
-
-2. Create and activate virtual environment 
-
-```
-python -m venv venv
-```
-on Linux system
-```
-source venv/bin/activate
-```
-on Windows system
-```
-.\venv\Scripts\activate.bat
-```
-3. Install requirements
-
-```
-pip install  -r requirements.txt
-```
-
-4. Run the 
-```
-flask --app app --debug run
-
-```
-
-
+## Future Improvements
+- Enhance the NLP model for better contextual understanding.
+- Deploy as a web application with an interactive UI.
+- Integrate with mental health resources and support groups.
