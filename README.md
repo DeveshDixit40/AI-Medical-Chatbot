@@ -21,19 +21,20 @@ Ensure you have **Python 3.7+** installed on your system.
    cd Mental-health-Chatbot
    ```
    If using the provided ZIP file, extract it and navigate into the project folder.
+   
 
-2. **Install Dependencies**
+3. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run the Chatbot Application**
+4. **Run the Chatbot Application**
    ```bash
    python app.py
    ```
    This will start a Flask server, and you can interact with the chatbot via the provided endpoint.
 
-4. **Interacting with the Chatbot**
+5. **Interacting with the Chatbot**
    Open your browser and navigate to `http://127.0.0.1:5000/` (or any specified port) to begin using the chatbot.
 
 ## File Structure
